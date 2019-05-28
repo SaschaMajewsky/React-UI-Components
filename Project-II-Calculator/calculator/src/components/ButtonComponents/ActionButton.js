@@ -1,10 +1,9 @@
 import React from 'react';
 import './Button.css';
 
-const ActionButton = props => {
-    return (
-        <button className={props.buttonStyle}>{props.text}</button>
-    )
+//props is the same as {propname1, propname2}
+const ActionButton = ({buttonStyle, text}) => {
+    return <button className={buttonStyle}>{text}</button>
 }
 
 export default ActionButton;
