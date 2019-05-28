@@ -1,1 +1,38 @@
 /* All styles for your header Components live here */
+.HeaderContainer {
+    display: flex;
+}
+
+.header-title {
+    display: flex;
+    align-items: baseline;
+    font-size: 0.9rem;
+}
+
+.header-title p {
+    color: rgb(148, 147, 147);
+}
+
+.header-content p {
+    margin-top: 1px;
+}
+
+.logo-image {
+    max-width: 150px;
+    height: 65px;
+    margin-left: 1.9rem;
+    margin-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+a {
+    padding-right: 10px;
+    color:  rgb(148, 147, 147);
+    text-decoration: none;
+}
+
+h2 {
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+
