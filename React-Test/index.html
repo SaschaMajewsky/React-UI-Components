@@ -35,7 +35,7 @@
         .name {
             font-size: 1.5rem;
         }
-        .number {
+        .number, .message {
             color: rgb(192, 31, 31)
         }
 
@@ -65,7 +65,7 @@
 </script> -->
 
 <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
-<script type='text/babel'>
+<!-- <script type='text/babel'>
     const myElement = <header className="container">
       <p className="name text">Sascha Majewsky</p>
       <p className="age text"><a className="number">25</a> years old</p>
@@ -73,6 +73,25 @@
     </header>
 
     ReactDOM.render(myElement, document.getElementById('root'))
+</script> -->
+
+<script type='text/babel'>
+    const MyHeader = props => {
+        return  <h1 className="message">{props.message}</h1>;
+    }
+
+    const MyComponent = props => {
+        console.log('Props: ', props);
+        return (
+            <div className="heading">
+               <MyHeader message="hello"/>
+               <MyHeader message="world"/>
+               <MyHeader message="props to you"/>
+            </div>
+        );
+    };
+
+    ReactDOM.render(<MyComponent name="Sascha" age={25}/>, document.getElementById('root'))
 </script>
 
 </html>
