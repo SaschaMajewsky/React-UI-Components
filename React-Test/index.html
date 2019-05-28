@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hello world from ReactJS!</title>
+</head>
+
+<!-- <style>
+    .sascha-element {
+        color: red;
+    }
+</style>
+ -->
+
+ <style>
+        .container {
+            margin-left: 40vw;
+            margin-right: 40vw;
+            margin-top: 35vh;
+            padding: 5rem;
+            background-color: rgb(104, 180, 189);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+        }
+        .text {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: black;
+        }
+        .name {
+            font-size: 1.5rem;
+        }
+        .number {
+            color: rgb(192, 31, 31)
+        }
+
+
+    </style>
+    
+<body>
+    <div id="root"></div>
+</body>
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<!-- <script type='text/javascript'>
+    const myElement = React.createElement('h1', {
+        className: 'sascha-element'
+    }, 'Hello. my name is Sascha');
+    ReactDOM.render(myElement, document.getElementById('root'))
+</script> -->
+
+<!-- <script type='text/javascript'>
+    const myElement = React.createElement('div', {className: 'container'},
+     React.createElement('h1', { className: 'sascha-element'}, 'Hello, my name is Sascha'),
+     React.createElement('h2', { className: 'greeting'}, 'Welcome visitor!'),
+     );
+
+    ReactDOM.render(myElement, document.getElementById('root'))
+</script> -->
+
+<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+<script type='text/babel'>
+    const myElement = <header className="container">
+      <p className="name text">Sascha Majewsky</p>
+      <p className="age text"><a className="number">25</a> years old</p>
+      <p className="location text">From Germany</p>
+    </header>
+
+    ReactDOM.render(myElement, document.getElementById('root'))
+</script>
+
+</html>
