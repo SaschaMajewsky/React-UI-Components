@@ -1,0 +1,38 @@
+.red {
+    color: rgb(255, 255, 255);
+    width: 25%;
+    height: 75px;
+    font-size: 3rem;
+    border-top: 2px solid rgb(128, 128, 128);
+    background-color: rgb(155, 24, 1);
+}
+
+.white {
+    width: 25%;
+    height: 75px;
+    font-size: 3rem;
+    font-weight: 600;
+    border-top: 2px solid rgb(127, 127, 127);
+    border-right: 2px solid rgb(128, 128, 128);
+    background-color: rgb(255, 255, 255);
+}
+
+.clear {
+    width: 75%;
+    height: 75px;
+    font-size: 3rem;
+    font-weight: 100;
+    border-top: 2px solid rgb(128, 128, 128);
+    border-right: 2px solid rgb(128, 128, 128);
+    background-color: rgb(255, 255, 255);
+}
+
+.zero {
+    width: 75%;
+    height: 75px;
+    font-size: 3rem;
+    font-weight: 600;
+    border-top: 2px solid rgb(128, 128, 128);
+    border-right: 2px solid rgb(128, 128, 128);
+    background-color: rgb(255, 255, 255);
+}
