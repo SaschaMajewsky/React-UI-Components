@@ -1,0 +1,33 @@
+.footerContent {
+    display: flex;
+    margin-left: 6rem;
+}
+
+.symbol {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.speak {
+    margin-left: 0rem;
+}
+
+.retweet {
+    margin-right: 0.4rem;
+    margin-top: 0.2rem;
+}
+
+.heart {
+    margin-right: 0.4rem;
+}
+
+.filled {
+    content:url("https://i.imgur.com/7S1H4Uq.png");
+}
+
+.heartCounter, .retweetCounter {
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    color: rgb(148, 147, 147);
+    margin-right: 1rem;
+}
